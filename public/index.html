@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welfare System | Login</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="card-3d">
+            <!-- Header / Title -->
+            <div class="card-header">
+                <h2>Welfare Portal</h2>
+                <p>Digital Eligibility & Tracking System</p>
+            </div>
+
+            <!-- Toggle Buttons -->
+            <div class="toggle-container">
+                <button id="loginBtn" class="toggle-btn active">Login</button>
+                <button id="signupBtn" class="toggle-btn">Sign Up</button>
+            </div>
+
+            <!-- LOGIN FORM (For Everyone: Citizens, Officers, Admins) -->
+            <form id="loginForm" class="form-content active">
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">Login</button>
+
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+
+                <a href="/auth/google" style="text-decoration: none;">
+    <button type="button" class="google-btn">
+        <i class="fa-brands fa-google"></i> Login with Google
+    </button>
+</a>
+            </form>
+
+            <!-- SIGNUP FORM (Only for New Citizens) -->
+            <form id="signupForm" class="form-content">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="e.g. Sanskar Tarte" required>
+                </div>
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label>Create Password</label>
+                    <input type="password" placeholder="Create a strong password" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Create Account</button>
+
+                <div class="divider">   
+                    <span>OR</span>
+                </div>
+
+                <a href="/auth/google" style="text-decoration: none;">
+    <button type="button" class="google-btn">
+        <i class="fa-brands fa-google"></i> Sign up with Google
+    </button>
+</a>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
